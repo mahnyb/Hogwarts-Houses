@@ -1,8 +1,10 @@
-from playsound import playsound
+from pydub import AudioSegment
+from pydub.playback import play
 
 def sortingHat():
 
-    playsound("HedwigsTheme.wav")
+    themeSong = AudioSegment.from_mp3("HedwigsTheme.wav")
+    play(themeSong)
     
     GryffindorPoints = 0
     SlytherinPoints = 0
