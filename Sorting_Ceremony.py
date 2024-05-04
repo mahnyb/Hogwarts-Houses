@@ -7,7 +7,7 @@ def sortingHat():
 
     # Introduction
 
-    print("Welcome to the Sorting Ceremony where we will determine which Hogwarts House you belong to... ")
+    print("\nWelcome to the Sorting Ceremony where we will determine which Hogwarts House you belong to... ")
 
     # Question 1
     print("\nQ1) Do you like Dawn or Dusk?")
@@ -95,12 +95,9 @@ def sortingHat():
         HufflePuffPoints += 2
     elif answer == 2:
         GryffindorPoints += 2
-        HufflePuffPoints += 2
     elif answer == 3:
-        HufflePuffPoints + 2
         RavenclawPoints += 2
     elif answer == 4:
-        HufflePuffPoints += 2
         SlytherinPoints += 2
     else:
         print("Wrong Input")
@@ -116,19 +113,80 @@ def sortingHat():
     answer = int (input ("Your answer(1/2/3/4): "))
 
     if answer == 1:
-        HufflePuffPoints += 2
         RavenclawPoints += 2
     elif answer == 2:
         HufflePuffPoints += 2
     elif answer == 3:
-        HufflePuffPoints + 2
         SlytherinPoints += 2
     elif answer == 4:
-        HufflePuffPoints += 2
         GryffindorPoints += 2
     else:
         print("Wrong Input")
         return
+
+    # Question 7
+    print("\nQ7) Given the choice, would you rather invent a potion that would guarantee you:")
+    print("1) Love?")
+    print("2) Glory?")
+    print("3) Wisdom?")
+    print("4) Power?")
+
+    answer = int (input ("Your answer(1/2/3/4): "))
+
+    if answer == 1:
+        HufflePuffPoints += 2
+    elif answer == 2:
+        GryffindorPoints += 2
+    elif answer == 3:
+        RavenclawPoints += 2
+    elif answer == 4:
+        SlytherinPoints += 2
+    else:
+        print("Wrong Input")
+        return
+    
+    # Question 8
+    print("\nQ8) Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. \n If it lured you, it would smell of:")
+    print("1) A crackling log fire")
+    print("2) The Sea")
+    print("3) Fresh Parchment")
+    print("4) Home")
+
+    answer = int (input ("Your answer(1/2/3/4): "))
+
+    if answer == 1:
+       GryffindorPoints += 2
+    elif answer == 2:
+        SlytherinPoints += 2
+    elif answer == 3:
+        RavenclawPoints += 2
+    elif answer == 4:
+        HufflePuffPoints += 2
+    else:
+        print("Wrong Input")
+        return
+    
+    # Question 9
+    print("\nQ9) Four goblets are placed before you. Which would you choose to drink?")
+    print("1) The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.")
+    print("2) The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.")
+    print("3) The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room. ")
+    print("4) The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.")
+
+    answer = int (input ("Your answer(1/2/3/4): "))
+
+    if answer == 1:
+       RavenclawPoints += 2
+    elif answer == 2:
+        HufflePuffPoints += 2
+    elif answer == 3:
+        GryffindorPoints += 2
+    elif answer == 4:
+        SlytherinPoints += 2
+    else:
+        print("Wrong Input")
+        return
+
 
 
 if __name__ == "__main__":
