@@ -14,17 +14,20 @@ def sortingHat():
     print("1) Dawn")
     print("2) Dusk")
 
-    answer = int (input ("Your answer(1/2): "))
+    while True:
+        answer = input("Your answer(1/2): ")
 
-    if answer == 1:
-        GryffindorPoints += 2
-        RavenclawPoints += 2
-    elif answer == 2:
-        SlytherinPoints += 2
-        HufflePuffPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            GryffindorPoints += 2
+            RavenclawPoints += 2
+            break
+        elif answer == '2':
+            SlytherinPoints += 2
+            HufflePuffPoints += 2
+            break
+        else:
+            print("Invalid Input. Please Enter either 1 or 2.")
+            
     
 
     # Question 2
@@ -32,34 +35,40 @@ def sortingHat():
     print("1) Forest")
     print("2) River")
 
-    answer = int (input ("Your answer(1/2): "))
+    while True:
+        answer = input("Your answer(1/2): ")
 
-    if answer == 1:
-        GryffindorPoints += 2
-        RavenclawPoints += 2
-    elif answer == 2:
-        SlytherinPoints += 2
-        HufflePuffPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            GryffindorPoints += 2
+            RavenclawPoints += 2
+            break
+        elif answer == '2':
+            SlytherinPoints += 2
+            HufflePuffPoints += 2
+            break
+        else:
+            print("Invalid Input. Please Enter either 1 or 2.")
+        
     
     # Question 3
     print("\nQ3) Do you like Moon or Stars?")
     print("1) Moon")
     print("2) Stars")
 
-    answer = int (input ("Your answer(1/2): "))
+    while True:
+        answer = input("Your answer(1/2): ")
 
-    if answer == 1:
-        SlytherinPoints += 2
-        RavenclawPoints += 2
-    elif answer == 2:
-        HufflePuffPoints += 2
-        GryffindorPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            SlytherinPoints += 2
+            RavenclawPoints += 2
+            break
+        elif answer == '2':
+            HufflePuffPoints += 2
+            GryffindorPoints += 2
+            break
+        else:
+            print("Invalid Input. Please Enter either 1 or 2.")
+        
 
     # Question 4
     print("\nQ4) Which of the following would you most hate people to call you?")
@@ -68,19 +77,24 @@ def sortingHat():
     print("3) Cowardly")
     print("4) Selfish")
 
-    answer = int (input ("Your answer(1/2/3/4): "))
+    while True:
+        answer = input("Your answer(1/2/3/4): ")
 
-    if answer == 1:
-        SlytherinPoints += 2
-    elif answer == 2:
-        RavenclawPoints += 2
-    elif answer == 3:
-        GryffindorPoints + 2
-    elif answer == 4:
-        HufflePuffPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            SlytherinPoints += 2
+            break
+        elif answer =='2':
+            RavenclawPoints += 2
+            break
+        elif answer == '3':
+            GryffindorPoints + 2
+            break
+        elif answer == '4':
+            HufflePuffPoints += 2
+            break
+        else:
+            print("Invalid Input. Please choose one of the valid options")
+
 
     # Question 5
     print("\nQ5) After you have died, what would you most like people to do when they hear your name?")
@@ -89,15 +103,15 @@ def sortingHat():
     print("3) Think with admiration of your achievements")
     print("4) I don't care what people think of me after I'm dead, it's what they think of me while I'm alive that counts")
 
-    answer = int (input ("Your answer(1/2/3/4): "))
+    answer = input("Your answer(1/2/3/4): ")
 
-    if answer == 1:
+    if answer == '1':
         HufflePuffPoints += 2
-    elif answer == 2:
+    elif answer == '2':
         GryffindorPoints += 2
-    elif answer == 3:
+    elif answer == '3':
         RavenclawPoints += 2
-    elif answer == 4:
+    elif answer == '4':
         SlytherinPoints += 2
     else:
         print("Wrong Input")
@@ -110,19 +124,24 @@ def sortingHat():
     print("3) The Great")
     print("4) The Bold")
 
-    answer = int (input ("Your answer(1/2/3/4): "))
+    while True: 
+        answer = input("Your answer(1/2/3/4): ")
 
-    if answer == 1:
-        RavenclawPoints += 2
-    elif answer == 2:
-        HufflePuffPoints += 2
-    elif answer == 3:
-        SlytherinPoints += 2
-    elif answer == 4:
-        GryffindorPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            RavenclawPoints += 2
+            break
+        elif answer == '2':
+            HufflePuffPoints += 2
+            break
+        elif answer == '3':
+            SlytherinPoints += 2
+            break
+        elif answer == '4':
+            GryffindorPoints += 2
+            break
+        else:
+            print("Invalid Input. Please choose one of the valid options")
+        
 
     # Question 7
     print("\nQ7) Given the choice, would you rather invent a potion that would guarantee you:")
@@ -131,19 +150,24 @@ def sortingHat():
     print("3) Wisdom?")
     print("4) Power?")
 
-    answer = int (input ("Your answer(1/2/3/4): "))
+    while True:
+        answer = input("Your answer(1/2/3/4): ")
 
-    if answer == 1:
-        HufflePuffPoints += 2
-    elif answer == 2:
-        GryffindorPoints += 2
-    elif answer == 3:
-        RavenclawPoints += 2
-    elif answer == 4:
-        SlytherinPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            HufflePuffPoints += 2
+            break
+        elif answer == '2':
+            GryffindorPoints += 2
+            break
+        elif answer == '3':
+            RavenclawPoints += 2
+            break
+        elif answer == '4':
+            SlytherinPoints += 2
+            break
+        else:
+            print("Invalid Input. Please choose one of the valid options")
+        
     
     # Question 8
     print("\nQ8) Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. \n If it lured you, it would smell of:")
@@ -152,19 +176,24 @@ def sortingHat():
     print("3) Fresh Parchment")
     print("4) Home")
 
-    answer = int (input ("Your answer(1/2/3/4): "))
+    while True: 
+        answer = input("Your answer(1/2/3/4): ")
 
-    if answer == 1:
-       GryffindorPoints += 2
-    elif answer == 2:
-        SlytherinPoints += 2
-    elif answer == 3:
-        RavenclawPoints += 2
-    elif answer == 4:
-        HufflePuffPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            GryffindorPoints += 2
+            break
+        elif answer == '2':
+            SlytherinPoints += 2
+            break
+        elif answer == '3':
+            RavenclawPoints += 2
+            break
+        elif answer == '4':
+            HufflePuffPoints += 2
+            break
+        else:
+            print("Invalid Input. Please choose one of the valid options")
+
     
     # Question 9
     print("\nQ9) Four goblets are placed before you. Which would you choose to drink?")
@@ -173,19 +202,24 @@ def sortingHat():
     print("3) The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room. ")
     print("4) The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.")
 
-    answer = int (input ("Your answer(1/2/3/4): "))
+    while True:
+        answer = input("Your answer(1/2/3/4): ")
 
-    if answer == 1:
-       RavenclawPoints += 2
-    elif answer == 2:
-        HufflePuffPoints += 2
-    elif answer == 3:
-        GryffindorPoints += 2
-    elif answer == 4:
-        SlytherinPoints += 2
-    else:
-        print("Wrong Input")
-        return
+        if answer == '1':
+            RavenclawPoints += 2
+            break
+        elif answer == '2':
+            HufflePuffPoints += 2
+            break
+        elif answer == '3':
+            GryffindorPoints += 2
+            break
+        elif answer == '4':
+            SlytherinPoints += 2
+            break
+        else:
+            print("Invalid Input. Please choose one of the valid options")
+
 
 
 
