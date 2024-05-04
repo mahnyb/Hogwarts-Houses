@@ -1,4 +1,8 @@
+from playsound import playsound
+
 def sortingHat():
+
+    playsound("HedwigsTheme.wav")
     
     GryffindorPoints = 0
     SlytherinPoints = 0
@@ -87,7 +91,7 @@ def sortingHat():
             RavenclawPoints += 2
             break
         elif answer == '3':
-            GryffindorPoints + 2
+            GryffindorPoints += 2
             break
         elif answer == '4':
             HufflePuffPoints += 2
